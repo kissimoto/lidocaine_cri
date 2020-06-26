@@ -23,9 +23,14 @@
         <td><label for=loadingDoseRate>Loading Dose Rate (mg/kg)</label></td>   
         <td><input type="number"  id="loadingDoseRate" required value="" placeholder="mg/kg"></td>
     </tr>
-        <td> <label for=drugConcentration>Lidocaine Concentration (mg/ml)</label></td>  
-        <td><input type="number"  id="drugConcentration" required value="" placeholder="mg/ml"></td>
+    <tr>
+       <td> <label for="drugCon">Lidocaine Concentration (mg/ml)</label></td>
+       <td><select id="drugCon">
+            <option value="10">10 mg</option>
+            <option value="20">20 mg</option>
+        </select></td>
     </tr>
+    
     <tr>
         <td></td>
         <td> <button onclick=lidoProcess() id='submitbutton'>Calculate</button></td>
@@ -65,7 +70,7 @@
     </div>
         <div id="result2"></div> 
        
-    <script src=lidocaine_vet.js></script>
+    <script src=lidoloadingdose.js></script>
    
 </div>
 </body>
