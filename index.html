@@ -7,48 +7,45 @@
 </head>
 <body>
     <header>
-        <h1>Lidocaine 10 or 20 mg/ml</h1>
-      <h3>Loading Dose <br>Analgesia <label>Dogs 1mg/kg (avoid in cats)</label> <br>
-       Arrythmia<label>Dogs 2 - 8 mg/kg in 25% boluses</label>
-       Arrythmia<label>Cats 0.25 - 2 mg/kg in 25% boluses</label></h3>
+        <h1>Lidocaine in Dogs <span>(10 or 20 mg/ml)</span></h1>
+        <h3> Loading Dose <br>Analgesia <label>1 mg/kg</label> <br>
+       Arrythmia<label>2 - 8 mg/kg in 25% boluses</label></h3>
     </header>
-   <br>
-    <div class='wrapper1'>
-    <table>
-    <tbody>
-    <tr>
-        <td><label for=weight>Animal's weight (kg)</label></td>
-        <td><input type=number  id=weight required value='' placeholder=kg></td>
-    </tr>
-    <tr>
-        <td><label for=loadingDoseRate>Loading Dose Rate (mg/kg)</label></td>   
-        <td><input  type="number"  id="loadingDoseRate" required value="" placeholder="mg/kg"></td>
-        
-    </tr>
-    <tr>
-       <td> <label for="drugCon">Lidocaine Concentration (mg/ml)</label></td>
-       <td><select id="drugCon">
-            <option value="10">10 mg</option>
-            <option value="20">20 mg</option>
-        </select></td>
-    </tr>
-    
-    <tr>
-        <td></td>
-        <td> <button onclick=lidoProcess() id='submitbutton'>Calculate</button></td>
-    </tr>
-</tbody>
-</table>
-    <div id="result"></div> 
+            <table>
+            <tbody>
+                <tr>
+                    <td><label for=weight>Animal weight (kg)</label></td>
+                    <td><input type=number  id=weight required value='' placeholder=kg></td>
+                </tr>
+                <tr>
+                    <td><label for=loadingDoseRate>Loading Dose Rate (mg/kg)</label></td>   
+                    <td><input type="number"  id="loadingDoseRate" required value="" placeholder="0.25-1 mg/kg"></td>
+                </tr>
+                <tr>
+                    <td> <label for="drugCon">Lidocaine Concentration (mg/ml)</label></td>
+                    <td><select id="drugCon">
+                         <option value="10">10 mg/ml</option>
+                         <option value="20">20 mg/ml<mg>
+                         <ml></ml></option>
+                     </select></td>
+                 </tr>                   
+
+                    <td><button onclick="reload()" id='reloadButton'>Change Dose</button></td>
+                    <td> <button onclick=lidoProcess() id='submitbutton'>Calculate</button></td>
+                </tr>
+            </tbody>
+            </table>
+                <div id="result"></div> 
+                <p id="error"></p>
+                
     <script src=lidoloadingdose.js></script>
 
     <div class='wrapper2'> 
 
         <header>
     
-            <h3>Fluid Bag Based CRI<br>Analgesia <label>Dogs 1.2 - 3 mg/kg/hr</label> <br>
-                Arrythmia<label>Dogs 1.5 - 6 mg/kg/hr</label><br>
-                Arrythmia<label>Cats 0.6 - 2.4 mg/kg/hr</label></h3>
+            <h3>Fluid Bag Based CRI<br>Analgesia <label>1.2 - 3 mg/kg/hr</label> <br>
+                Arrythmia<label>1.5 - 6 mg/kg/hr</label><br></h3>
         </header>
         <table>
             <tbody>
@@ -70,16 +67,15 @@
             </select></td>
             </tr>
         <tr>
-            <td></td>
+            <td><button onclick="refresh()" id='refreshButton'>Reset Value</button></td>
             <td><button onclick=process() id='submitbutton'>Calculate</button></td>
         </tr>
         </tbody>
-        </table>
-   
+        </table> 
        
     </div>
         <div id="result2"></div> 
-       
+        <p id="error2"></p>
     <script src=lidoloadingdose.js></script>
    
 </div>
