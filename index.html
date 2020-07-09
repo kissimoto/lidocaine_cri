@@ -8,8 +8,8 @@
 <body>
     <header>
         <h1>Lidocaine in Dogs <span>(10 or 20 mg/ml)</span></h1>
-        <h3> Loading Dose <br>Analgesia <label>1 mg/kg</label> <br>
-       Arrythmia<label>2 - 8 mg/kg in 25% boluses</label></h3>
+        <h3> Loading Dose <br>Analgesia <label>0.25 - 1 mg/kg</label> <br>
+       Arrythmia<label>2 - 8 mg/kg Give in 25% boluses</label></h3>
     </header>
             <table>
             <tbody>
@@ -30,7 +30,7 @@
                      </select></td>
                  </tr>                   
 
-                    <td><button onclick="reload()" id='reloadButton'>Change Dose</button></td>
+                    <td><button onclick="reload()" id='reloadButton'>Clear All</button></td>
                     <td> <button onclick=lidoProcess() id='submitbutton'>Calculate</button></td>
                 </tr>
             </tbody>
@@ -67,17 +67,18 @@
             </select></td>
             </tr>
         <tr>
-            <td><button onclick="refresh()" id='refreshButton'>Reset Value</button></td>
+            <td><button onclick="refresh()" id='refreshButton'>Clear All</button></td>
             <td><button onclick=process() id='submitbutton'>Calculate</button></td>
         </tr>
         </tbody>
         </table> 
        
-    </div>
+    
         <div id="result2"></div> 
         <p id="error2"></p>
-    <script src=lidoloadingdose.js></script>
-   
-</div>
+     <script src=lidoloadingdose.js></script>
+  </div>
+
 </body>
 </html>
+
