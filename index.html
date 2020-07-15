@@ -15,11 +15,11 @@
             <tbody>
                 <tr>
                     <td><label for=weight>Animal weight (kg)</label></td>
-                    <td><input type=number  id=weight required value='' placeholder=kg></td>
+                    <td><input type=number id=weight min="0.01" step="0.001" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 46 && charCode > 31 && event.charCode >= 48 && event.charCode <= 57" required value='' placeholder=kg></td>
                 </tr>
                 <tr>
                     <td><label for=loadingDoseRate>Loading Dose Rate (mg/kg)</label></td>   
-                    <td><input type="number"  id="loadingDoseRate" required value="" placeholder="0.25-1 mg/kg"></td>
+                    <td><input type="number" id="loadingDoseRate" min="0.01" step="0.001"  onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 46 && charCode > 31 && event.charCode >= 48 && event.charCode <= 57" required value="" placeholder="0.25-1 mg/kg"></td>
                 </tr>
                 <tr>
                     <td> <label for="drugCon">Lidocaine Concentration (mg/ml)</label></td>
@@ -51,11 +51,11 @@
             <tbody>
         <tr>
             <td><label for=dose_rate>Lidocaine Dose Rate (mg/kg/hr)</label></td>
-            <td><input type='number' id=dose_rate required value='' placeholder=mg/kg/hr></td>
+            <td><input type='number' id=dose_rate min="0.01" step="0.001" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 46 && charCode > 31 && event.charCode >= 48 && event.charCode <= 57" required value='' placeholder=mg/kg/hr></td>
         </tr>
         <tr>
             <td><label for=fluidRate>Fluid Rate (ml/kg/hr)</label></td>
-            <td><input type=number  id=fluidRate required value='' placeholder=ml/kg/hr></td>
+            <td><input type=number  id=fluidRate min="0.01" step="0.001" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 46 && charCode > 31 && event.charCode >= 48 && event.charCode <= 57" required value='' placeholder=ml/kg/hr></td>
         </tr>
         <tr>
             <td><label for="bagSize">Fluid Bag Size (ml)</label></td>
